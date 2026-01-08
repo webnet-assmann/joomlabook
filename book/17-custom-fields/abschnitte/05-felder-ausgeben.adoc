@@ -448,7 +448,7 @@ _getField_[.indexref]##-Methode
 |===
 a|
 ++<++?php +
-$contactName = $this-++>++form-++>++getField('contact++_++name');
+$contactName = $this-++>++form-++>++getField('contact++_++name'); +
 
 echo $contactName-++>++label; +
 echo $contactName-++>++input; +
