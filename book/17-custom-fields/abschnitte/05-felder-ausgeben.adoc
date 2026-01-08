@@ -6,27 +6,27 @@ Joomla!-Komponenten genau steuern kann.
 
 ==== Automatische Anzeige
 
-Die Option _Automatische Anzeige_, die im Kapitel 16.1.2.2 bereits
+Die Option _Automatische Anzeige_, die im Kapitel 17.02 bereits
 aufgezählt wurde, gibt das Feld an vorgegebenen Stellen in Verbindung
 mit Trigger-Events aus.
 
 Um das besser zu verstehen, öffnen Sie am besten den
 Standard-Beitrags-View unter
-_/components/com++_++content/views/article/tmpl/default.php_ und sehen
+_/components/com++_++content/tmpl/article/default.php_ und sehen
 sich den Code an.
 
-In der Originaldatei (Joomla! Version 3.7.0) finden Sie:
+In der Originaldatei (Joomla! Version 6) finden Sie:
 
-* In _Zeile 81_ den _AfterDisplayTitle_-Trigger (Nach Titel)
+* In _Zeile 74_ den _AfterDisplayTitle_-Trigger (Nach Titel)
 
 ++<++?php echo $this-++>++item-++>++event-++>++afterDisplayTitle; ?++>++
 
-* In _Zeile 94_ den _BeforeDisplayContent_-Trigger (Vor Inhalt)
+* In _Zeile 87_ den _BeforeDisplayContent_-Trigger (Vor Inhalt)
 
 ++<++?php echo $this-++>++item-++>++event-++>++beforeDisplayContent;
 ?++>++
 
-* In _Zeile 170_ den _AfterDisplayContent_-Trigger (Nach Inhalt)
+* In _Zeile 144_ den _AfterDisplayContent_-Trigger (Nach Inhalt)
 
 ++<++?php echo $this-++>++item-++>++event-++>++afterDisplayContent;
 ?++>++
@@ -63,8 +63,8 @@ werden.
 ===== Override/Alternatives Layout
 
 Um die Ausgabe des Benutzerprofils zu individualisieren, müssen Sie wie
-im Kapitel 12.1 beschrieben ein Override oder ein Alternatives Layout
-von der Datei _/components/com++_++users/views/profile/tmpl/default.php_
+im Kapitel 12.01 beschrieben ein Override oder ein Alternatives Layout
+von der Datei _/components/com++_++users/tmpl/profile/default.php_
 anlegen.
 
 Kurz in Ihre Erinnerung zurückgerufen, kopieren Sie dazu diese Datei und
@@ -79,20 +79,20 @@ finden diese in der Feldübersicht rechts in der Spalte „ID“.
 ++<++?php echo $this-++>++data-++>++jcfields++[++21++]++-++>++value;
 ?++>++
 
-Des Weiteren finden Sie im _View_ des Benutzerprofils, in der Datei
-_default++_++custom.php_ (siehe Listing 16.1), eine foreach-Schleife,
+Des Weiteren finden Sie im _tmpl_ des Benutzerprofils, in der Datei
+_default++_++custom.php_ (siehe Listing 17.1), eine foreach-Schleife,
 die es ermöglicht, Felder anhand ihres Namens folgendermaßen auszugeben:
 
 ++<++?php echo $customFields++[++'firmenfarbe'++]++-++>++value; ?++>++
 
-Listing 16.1 – Ausschnitt aus der Datei
-_/components/com++_++users/views/profile/tmpl/default++_++custom.php_ –
+Listing 17.1 – Ausschnitt aus der Datei
+_/components/com++_++users/tmpl/profile/default++_++custom.php_ –
 hier werden die Feld-Namen der Variable $customFields zugeordnet
 
-$tmp = isset($this-++>++data-++>++jcfields) ?
-$this-++>++data-++>++jcfields : array(); +
-$customFields = array(); +
-+
+$tmp = $this-++>++data-++>++jcfields ?? [];
+
+$customFields = [];
+
 foreach ($tmp as $customField) +
 ++{++ +
 $customFields++[++$customField-++>++name++]++ = $customField; +
@@ -100,11 +100,11 @@ $customFields++[++$customField-++>++name++]++ = $customField; +
 
 ==== Im Beitrag
 
-Neben der Automatischen Anzeige aus Kapitel 16.1.5.1 können eigene
+Neben der Automatischen Anzeige aus Kapitel 17.01 können eigene
 Felder auch über _Shortcodes_ im Editor eingebunden werden. Dazu finden
-Sie im Joomla!-Core-Editor _tinyMCE_ einen Button. Klicken Sie, wie im
-Bild 16.7 gezeigt, bei den Editor-Schaltflächen auf FELDER. Es öffnet
-sich ein modales Fenster mit einer Feldübersicht, wie im Bild 16.8.
+Sie im Joomla!-Core-Editor _tinyMCE_ einen Dropdown-Button _CMS Inhalt_. 
+Klicken Sie hier im Dropdown auf Felder. Es öffnet sich ein modales Fenster 
+mit einer Feldübersicht, wie im Bild 17.8.
 Sobald Sie ein Feld anklicken, setzt diese Schaltfläche einen
 Plug-in-Code in Ihren Beitrag, der das Feld dann im Frontend an der
 entsprechenden Stelle ausgibt. Zum Beispiel lädt _++{++field 1}_ das
@@ -112,11 +112,11 @@ Feld mit der _ID 1_.
 
 image:media/image7.jpg[media/image7,width=548,height=281]
 
-Bild 16.7 – Schaltfläche im _tinyMCE_-Editor
+Bild 17.7 – Schaltfläche im _tinyMCE_-Editor
 
 image:media/image8.jpg[media/image8,width=548,height=281]
 
-Bild 16.8 – Fenster zur Auswahl von Modulen
+Bild 17.8 – Fenster zur Auswahl von Modulen
 
 [width="99%",cols="14%,86%",options="header",]
 |===
@@ -149,7 +149,7 @@ layoutname}
 ======= Ausgabe der Felder in einem Override/Alternativen Layout
 
 Sie können eigene Felder auch in einem Override oder Alternativen Layout
-vom Beitragslayout, siehe Kapitel 12.1.3, ausgeben. Notieren Sie sich zu
+vom Beitragslayout, siehe Kapitel 12.01, ausgeben. Notieren Sie sich zu
 jedem Feld die dazugehörige ID oder den Feldnamen. Der Feldwert kann
 dann in Ihrem Override über folgenden Code eingebunden werden. Beachten
 Sie dabei die Zahl in den eckigen Klammern, die der Feld-ID entsprechen
