@@ -194,11 +194,11 @@ eines Felds während der Entwicklung über folgenden Code ausgeben lassen.
 Grundsätzlich ist es auch möglich, dem Benutzer zugeordnete Felder im
 Beitrag anzuzeigen. So können Sie als Abspann in einem Beitrag zum
 Beispiel Informationen zum Autor darstellen. Dazu müssen Sie aber
-zunächst sicherstellen, dass Ihr Layout über den im Listing 16.2
+zunächst sicherstellen, dass Ihr Layout über den im Listing 17.2
 angezeigten Code Zugriff auf das Userobjekt, den Beitragsautor und die
 dazugehörigen Felder hat.
 
-Listing 16.2 – Abrufen des Benutzers im Beitragslayout
+Listing 17.2 – Abrufen des Benutzers im Beitragslayout
 
 $user = JFactory::getUser($this-++>++item-++>++created++_++by); +
 JEventDispatcher::getInstance()-++>++trigger('onContentPrepare',
@@ -240,10 +240,10 @@ ausgeben lassen.
 ==== Im Kontakt
 
 Für die Ausgabe der Kontaktinformationen können Sie im Kontakt die
-Parameter aus der Automatischen Anzeige aus Kapitel 16.1.4.1 verwenden,
-um die Ausgabe der Felder zu steuern oder unter Komponenten » Kontakt »
-Kontakt Bearbeiten im Reiter Weitere Informationen den Editor-Button
-(16.1.4.3) nutzen, um Felder an entsprechender Stelle auszugeben – so
+Parameter aus der Automatischen Anzeige aus Kapitel 17.05 verwenden,
+um die Ausgabe der Felder zu steuern oder unter KOMPONENTE » KONTAKT »
+KONTAKT BEARBEITEN im Reiter WEITERE INFORMATIONEN den Editor-Button
+(17.05) nutzen, um Felder an entsprechender Stelle auszugeben – so
 wie Sie es auch aus dem Beitrag kennen.
 
 Für ein Override der Kontaktanzeige notieren Sie sich zu jedem Feld die
@@ -281,13 +281,13 @@ Möglichkeiten, die Daten aus dem Benutzerprofil innerhalb der
 Kontaktinformationen einzublenden:
 
 Wenn Sie den Kontakt-Menüpunkt bearbeiten, finden Sie im Reiter
-Kontaktanzeigeoptionen die Einstellung _Eigene Felder anzeigen_. Die
-gleiche Einstellung ist im Kontakt selbst im Reiter „Anzeige“ und in den
+KONTAKTANZEIGENOTIONEN die Einstellung _Eigene Felder anzeigen_. Die
+gleiche Einstellung ist im Kontakt selbst im Reiter „ANZEIGE“ und in den
 globalen Optionen der Kontakt-Komponente zu finden.
 
 image:media/image9.jpg[media/image9,width=548,height=250]
 
-Bild 16.9 – Einstellung der Anzeige von Benutzer-Feldern im Kontakt
+Bild 17.9 – Einstellung der Anzeige von Benutzer-Feldern im Kontakt
 
 Außerdem ist es möglich, die Benutzerfelder in Ihrem eigenen
 Kontakt-Override/Layout über folgende Zeile auszugeben:
@@ -297,7 +297,7 @@ $this-++>++contactUser-++>++jcfields++[++20++]++-++>++value; ?++>++
 
 Beachten Sie dabei, die Anzeige der Benutzer-Felder in den Optionen zu
 aktivieren, und passen Sie das Layout von
-/components/com++_++contact/views/contact/tmpl/default++_++user++_++custom++_++fields.php
+/components/com++_++contact/tmpl/contact/default++_++user++_++custom++_++fields.php
 mit Hilfe eines Overrides oder Alternativen Layouts in Ihrem Template
 an.
 
@@ -316,10 +316,10 @@ Felder.
 
 Wenn Sie die Reihenfolge aller Felder im Kontaktformular individuell
 bestimmen wollen, dann müssen Sie ein Override der Datei
-_components/com++_++contact/views/contact/tmpl/default++_++form.php_
+_components/com++_++contact/tmpl/contact/default++_++form.php_
 anlegen.
 
-Sehen wir uns die Datei _default++_++form.php_ im Listing 16.3 an. In
+Sehen wir uns die Datei _default++_++form.php_ im Listing 17.3 an. In
 dem Formular befindet sich in den Zeilen 18–33 eine foreach-Schleife,
 die innerhalb des form-Tags alle Felder abruft. Wenn wir nun die
 foreach-Schleife löschen, werden natürlich auch die Core-Felder nicht
@@ -336,44 +336,46 @@ _Layout_ für die Formfelder festgelegt ist. Die Methode _getField_ ist
 hingegen imstande, das Label und das Formularfeld selbst unabhängig
 voneinander auszugeben.
 
-Listing 16.3 – Anzeige der Datei
-_components/com++_++contact/views/contact/tmpl/default++_++form.php_
+Listing 17.3 – Anzeige der Datei
+_components/com++_++contact/tmpl/contact/default++_++form.php_
 
 [arabic]
 . ++<++?php
+. {blank}
 . /++**++
 . ++*++ @package Joomla.Site
 . ++*++ @subpackage com++_++contact
 . ++*++
-. ++*++ @copyright Copyright (C) 2005 - 2017 Open Source Matters, Inc.
+. ++*++ @copyright Copyright (C) 2006 Open Source Matters, Inc.
 All rights
 . reserved.
 . ++*++ @license GNU General Public License version 2 or later; see
 LICENSE.txt
 . ++*++/
-. defined('++_++JEXEC') or die;
+. defined('_JEXEC') or die;
 . {blank}
-. JHtml::++_++('behavior.keepalive');
-. JHtml::++_++('behavior.formvalidator');
+. use Joomla\CMS\HTML\HTMLHelper;
+. use Joomla\CMS\Language\Text;
+. use Joomla\CMS\Router\Route;
+. {blank}
+. /++**++ @var \Joomla\Component\Contact\Site\View\Contact\HtmlView $this */
+. /++**++ @var Joomla\CMS\WebAsset\WebAssetManager $wa */
+. $wa = $this->getDocument()->getWebAssetManager();
+. $wa->useScript('keepalive')
+.    ->useScript('form.validate');
 . {blank}
 . ?++>++
-. ++<++div class="contact-form"++>++
-. ++<++form id="contact-form" action="++<++?php echo
-JRoute::++_++('index.php'); ?++>++" method="post" class="form-validate
-form-horizontal well"++>++
-. ++<++?php foreach ($this-++>++form-++>++getFieldsets() as $fieldset) :
-?++>++
-. ++<++?php if ($fieldset-++>++name === 'captcha'&&
-!$this-++>++captchaEnabled) : ?++>++
+. ++<++div class="com-contact__form contact-form"++>++
+. ++<++form id="contact-form" action="++<++?php echo Route::_('index.php'); ?++>++" method="post" class="form-validate form-horizontal well"++>++
+. ++<++?php foreach ($this-++>++form-++>++getFieldsets() as $fieldset) : ?++>++
+. ++<++?php if ($fieldset-++>++name === 'captcha' && $this-++>++captchaEnabled) : ?++>++
 . ++<++?php continue; ?++>++
 . ++<++?php endif; ?++>++
-. ++<++?php $fields =
-$this-++>++form-++>++getFieldset($fieldset-++>++name); ?++>++
+. ++<++?php $fields = $this-++>++form-++>++getFieldset($fieldset->name); ?++>++
 . ++<++?php if (count($fields)) : ?++>++
-. ++<++fieldset++>++
-. ++<++?php if (isset($fieldset-++>++label) && ($legend =
-trim(JText::++_++($fieldset-++>++label))) !== '') : ?++>++
-. ++<++legend++><++?php echo $legend; ?++><++/legend++>++
+. ++<++fieldset class="m-0"++>++
+. ++<++?php if (isset($fieldset-++>++label) && ($legend = trim(Text::_($fieldset-++>++label))) !== '') : ?++>++
+. ++<++legend>++<++?php echo $legend; ?>++<++/legend>
 . ++<++?php endif; ?++>++
 . ++<++?php foreach ($fields as $field) : ?++>++
 . ++<++?php echo $field-++>++renderField(); ?++>++
@@ -381,29 +383,28 @@ trim(JText::++_++($fieldset-++>++label))) !== '') : ?++>++
 . ++<++/fieldset++>++
 . ++<++?php endif; ?++>++
 . ++<++?php endforeach; ?++>++
+. ++<++?php if ($this->captchaEnabled) : ?++>++
+. ++<++?php echo $this-++>++form-++>++renderFieldset('captcha'); ?++>++
+. ++<++?php endif; ?++>++
 . ++<++div class="control-group"++>++
 . ++<++div class="controls"++>++
-. ++<++button class="btn btn-primary validate" type="submit"++><++?php
-echo JText::++_++('COM++_++CONTACT++_++CONTACT++_++SEND');
-?++><++/button++>++
-. ++<++input type="hidden" name="option" value="com++_++contact" /++>++
-. ++<++input type="hidden" name="task" value="contact.submit" /++>++
-. ++<++input type="hidden" name="return" value="++<++?php echo
-$this-++>++return++_++page; ?++>++" /++>++
-. ++<++input type="hidden" name="id" value="++<++?php echo
-$this-++>++contact-++>++slug; ?++>++" /++>++
-. ++<++?php echo JHtml::++_++('form.token'); ?++>++
+. ++<++button class="btn btn-primary validate" type="submit"++><++?php echo Text::_('COM_CONTACT_CONTACT_SEND'); ?++><++/button++>++
+. ++<++input type="hidden" name="option" value="com_contact"++>++
+. ++<++input type="hidden" name="task" value="contact.submit"++>++
+. ++<++input type="hidden" name="return" value="++<++?php echo $this->return_page; ?++>++"++>++
+. ++<++input type="hidden" name="id" value="++<++?php echo $this-++>++item-++>++slug; ?++>++"++>++
+. ++<++?php echo HTMLHelper::_('form.token'); ?++>++
 . ++<++/div++>++
 . ++<++/div++>++
 . ++<++/form++>++
 . ++<++/div++>++
 
 Eine Übersicht, wie Sie die Kontaktfelder mit der _renderField_-Methode
-aufrufen, können Sie der Tabelle 16.1 entnehmen. Der Einsatz von
+aufrufen, können Sie der Tabelle 17.1 entnehmen. Der Einsatz von
 _renderField_ übernimmt alle Feldeinstellungen aus dem Backend (z.B. die
 Feldbeschriftung nicht anzuzeigen).
 
-Tabelle 16.1 – Aufruf der Felder über die
+Tabelle 17.1 – Aufruf der Felder über die
 _renderField_[.indexref]##-Methode
 
 [width="100%",cols="63%,37%",options="header",]
@@ -440,7 +441,7 @@ $field = $this-++>++form-++>++getField('feldname', 'com++_++fields'); +
 $field-++>++class = 'ihreindividuelle++_++klasse'; +
 echo $field-++>++renderField();
 
-Tabelle 16.2 – Aufruf der Felder über die
+Tabelle 17.2 – Aufruf der Felder über die
 _getField_[.indexref]##-Methode
 
 [width="100%",cols="63%,37%",options="header",]
