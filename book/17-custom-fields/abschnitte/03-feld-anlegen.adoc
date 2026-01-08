@@ -1,6 +1,6 @@
 === Felder anlegen – so geht es!
 
-Im Kapitel 16.1.2 haben Sie bereits alle Einstellungsmöglichkeiten und
+Im Kapitel 17.02 haben Sie bereits alle Einstellungsmöglichkeiten und
 Feldtypen kennengelernt. Bevor Sie ein neues Feld anlegen, ist es
 sinnvoll zunächst eine Feldgruppe anzulegen, der das Feld zugeordnet
 wird. Es erscheint dann je nach Komponente, in der es eingebunden ist,
@@ -106,7 +106,7 @@ die gewünschte Position.
 
 image:media/image6.jpg[media/image6,width=548,height=281]
 
-Bild 16.6 – Reihenfolge der Feldanzeige ändern
+Bild 17.7 – Reihenfolge der Feldanzeige ändern
 
 ==== Mehrsprachigkeit
 
