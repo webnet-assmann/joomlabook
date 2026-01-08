@@ -84,6 +84,10 @@ Dadurch stellen Sie sicher, dass diese Felder nicht eigenständig in Artikeln
 oder anderen Inhalten angezeigt werden, sondern nur im Kontext des jeweiligen 
 Subform-Feldes zur Verfügung stehen.
 
+Mit Subforms entstehen im Backend für Redakteure ein übersichtlicher Eingabebereich, 
+in dem sie mehrfach Einträge (z. B. mehrere zugehörige Links, Bilder oder Ansprechpartner) 
+erfassen können.
+
 ====== Praxisbeispiel für Subforms: Zugehörige externe Links
 
 Angenommen, Sie möchten pro Artikel mehrere externe Links erfassen, erstellen Sie 
