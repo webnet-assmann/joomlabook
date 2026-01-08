@@ -413,18 +413,20 @@ im Frontend angezeigt werden soll.
 
 ===== Subform
 
-Das Feld Subform löst das Repeatable Feld ab. Mit dem Feld Subform 
-lassen sich ein oder mehrere angelegte Felder auswählen, die dann im 
-Beitrag ausgefüllt werden können und im Frontend zusammen angezeigt werden. 
-Damit lassen sich z.B. eigene Listen oder Tabellen erstellen. Es kann eine 
-maximale Wiederholung eingegeben werden.
-In den Feldeinstellungen lässt sich einstellen, ob man bei Optionsfelder den 
-Wert des Feldes ausgeben möchte oder nicht.
-Das Layout der Felder im Subform kann mit der Eingabemaske-Option 
-“Formular Layout” bestimmt werden. Standardmäßig werden die Felder als Tabelle 
-nebeneinander angezeigt. Bei mehreren Feldern kann dies sehr schnell 
-unübersichtlich werden. Hier empfiehlt sich das Layout Formular. Damit werden 
-die Felder gebündelt untereinander angezeigt.
+Ein Subform Custom Field ist ein spezieller Typ eines Joomla-Custom-Fields, 
+der es erlaubt, ein oder mehrere Felder innerhalb eines anderen Feldes zu integrieren. 
+Technisch gesehen ist es ein Feld, das eine Struktur von Unterfeldern (Sub-Fields) 
+enthält, die entweder einmalig oder wiederholbar sind. Es ersetzt den alten Typ 
+„Repeatable Field“ aus Joomla 3 und erweitert dessen Funktionalität deutlich.
+
+Das Subform-Feld bildet eine übergeordnete (Parent) Struktur, die mehrere untergeordnete 
+Felder (Child-Fields) enthalten kann. Diese Child-Fields können unterschiedliche Feldtypen 
+sein (z. B. Text, URL, Media, Integer etc.). 
+
+Mit der Option Wiederholbar kann das Subform mehrfach wiederholt werden, sodass der Benutzer 
+mehrere Datensätze innerhalb desselben Felds erfassen kann.
+
+Wie ein Subform angelegt und verwendet wird, ist im Kapitel 17.03 beschrieben.
 
 Screenshot eines Subformfeldes im Layout Formular.
 
