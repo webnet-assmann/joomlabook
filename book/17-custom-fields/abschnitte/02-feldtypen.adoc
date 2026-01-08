@@ -13,7 +13,7 @@ werden.
 
 image:media/image1.jpg[media/image1,width=548,height=378]
 
-Bild 16.1 Grundeinstellungen der Felder
+Bild 17.1 Grundeinstellungen der Felder
 
 ===== Titel
 
@@ -26,7 +26,7 @@ Titel, falls kein Label festgelegt wurde.
 In diesem Feld wählen Sie einen Feldtyp aus. Sobald Sie einen Typ
 festgelegt und das Feld gespeichert haben, wird dieser Typ festgesetzt
 und kann nicht mehr geändert werden. Die verschiedenen Joomla!-Core
-Feldtypen-werden im Kapitel 16.1.2.3 näher beschrieben.
+Feldtypen-werden im Kapitel 16.02 näher beschrieben.
 
 ===== Name
 
@@ -107,7 +107,7 @@ werden. Diese Einstellungen sind ebenso für alle Felder gleich.
 
 image:media/image2.jpg[media/image2,width=548,height=327]
 
-Bild 16.2 – Generelle Feldeinstellungen im Reiter „Optionen“
+Bild 17.2 – Generelle Feldeinstellungen im Reiter „Optionen“
 
 ==== Eingabemaske-Optionen
 
@@ -250,7 +250,7 @@ Sprachstrings gesteuert.
 
 image:media/image3.jpg[media/image3,width=393,height=328]
 
-Bild 16.3 – Das neue Joomla!-Kalenderfeld
+Bild 17.3 – Das neue Joomla!-Kalenderfeld
 
 ===== Kontrollkästchen
 
@@ -270,7 +270,7 @@ _Standard-Parameter (Default)_ einen Wert hinterlegen (zum Beispiel
 
 image:media/image4.jpg[media/image4,width=548,height=207]
 
-Bild - 16.4 – Der Farbwähler
+Bild - 17.4 – Der Farbwähler
 
 ===== Editor (WYSIWYG)
 
@@ -323,7 +323,7 @@ als zwei Optionen sollte Buttons ausgewählt werden.
 
 image:media/image5.jpg[media/image5,width=548,height=103]
 
-Bild 16.4 – Das Design des Optionsfelds
+Bild 17.5 – Das Design des Optionsfelds
 
 ===== SQL (Dropdown und Mehrfach-Auswahl)
 
@@ -428,7 +428,7 @@ mehrere Datensätze innerhalb desselben Felds erfassen kann.
 
 Wie ein Subform angelegt und verwendet wird, ist im Kapitel 17.03 beschrieben.
 
-Screenshot eines Subformfeldes im Layout Formular.
+Bild - 17.6 Subformfeld im Layout Formular
 
 ===== Zahl
 
