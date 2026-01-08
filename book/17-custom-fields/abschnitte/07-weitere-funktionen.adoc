@@ -21,9 +21,7 @@ erscheinen werden.
 
 ==== Versionierung
 
-Auch wenn „Eigene Felder” in Erweiterungen mit aktiver Versionierung
-eingebunden sind, ist die Versionierung der Feldinhalte selbst *NICHT*
-möglich.
+Mit Joomla 6 ist eine Versionierung der Custom Fileds möglich.
 
 ==== „Eigene Felder” deaktivieren
 
@@ -32,5 +30,5 @@ Konfiguration der jeweiligen Komponente deaktiviert werden.
 
 image:media/image12.jpg[media/image12,width=548,height=281]
 
-Bild 16.12 – Deaktivieren „Eigene Felder” in den globalen Optionen der
+Bild 17.12 – Deaktivieren „Eigene Felder” in den globalen Optionen der
 Komponente
