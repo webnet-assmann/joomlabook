@@ -21,7 +21,7 @@ erscheinen werden.
 
 ==== Versionierung
 
-Mit Joomla 6 ist eine Versionierung der Custom Fileds möglich.
+Mit Joomla! 6 ist eine Versionierung der Custom Fileds möglich.
 
 ==== „Eigene Felder” deaktivieren
 
