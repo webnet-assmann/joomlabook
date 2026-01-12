@@ -421,6 +421,11 @@ sein (z. B. Text, URL, Media, Integer etc.).
 Mit der Option Wiederholbar kann das Subform mehrfach wiederholt werden, sodass der Benutzer 
 mehrere Datensätze innerhalb desselben Felds erfassen kann.
 
+Für ein Subform ist es ratsam das Layout im Reiter _Optionen_ auf Formular zu stellen, da 
+im Standard-Layout die Felder ansonsten nebeneinander angezeigt werden. Bei 1-3 Feldern
+ist das noch überschaubar, wenn es allerdings mehrere untergeordnete Felder gibt, wird die
+Darstellung unübersichtlich.
+
 Wie ein Subform angelegt und verwendet wird, ist im Kapitel 17.03 beschrieben.
 
 .Subformfeld im Layout Formular
