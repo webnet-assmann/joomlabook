@@ -428,8 +428,8 @@ Darstellung unübersichtlich.
 
 Wie ein Subform angelegt und verwendet wird, ist im Kapitel 17.03 beschrieben.
 
-.Subformfeld im Layout Formular
-image::17/06_subformfeld.png[Subformfeld im layout Formular]
+.Joomla! Subformfeld
+image::17/06_subformfeld.png[Joomla! Subformfeld]
 
 ===== Zahl
 
