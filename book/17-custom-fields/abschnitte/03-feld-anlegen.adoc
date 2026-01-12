@@ -108,7 +108,7 @@ im Tabellenkopf und sortieren Sie dann die Felder per _Drag & Drop_ an
 die gewünschte Position.
 
 .Reihenfolge der Feldanzeige ändern
-image::17/07_reihenfolge_felder_aendern.png[Reihenfolge der Feldanzeige ändern]
+image::17/08_reihenfolge_felder_aendern.png[Reihenfolge der Feldanzeige ändern]
 
 ==== Mehrsprachigkeit
 
