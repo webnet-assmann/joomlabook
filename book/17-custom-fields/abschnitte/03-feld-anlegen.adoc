@@ -98,7 +98,7 @@ Unterfeld (Child-Field) hinzu. Auf diese Weise können Redakteurinnen und Redakt
 beliebig viele externe Links zu einem Artikel erfassen und verwalten.
 
 .Subformfeld im Layout Formular
-image::17/07_subformfeld.png[Subformfeld im layout Formular]
+image::17/07_subformfeld-formular.png[Subformfeld im Layout Formular]
 
 ==== Feld-Reihenfolge ändern
 
