@@ -111,10 +111,10 @@ entsprechenden Stelle ausgibt. Zum Beispiel lädt _++{++field 1}_ das
 Feld mit der _ID 1_.
 
 .Schaltfläche im _tinyMCE_-Editor
-image::17/08_schaltflaeche_tinymce.png[Schaltfläche im tinyMCE-Editor]
+image::17/09_schaltflaeche_tinymce.png[Schaltfläche im tinyMCE-Editor]
 
 .Fenster zur Auswahl von Modulen
-image::17/09_fenster_auswahl_module.png[Fenster zur Auswahl von Modulen]
+image::17/10_fenster_auswahl_module.png[Fenster zur Auswahl von Modulen]
 
 [width="99%",cols="14%,86%",options="header",]
 |===
@@ -284,7 +284,7 @@ gleiche Einstellung ist im Kontakt selbst im Reiter „ANZEIGE“ und in den
 globalen Optionen der Kontakt-Komponente zu finden.
 
 .Einstellung der Anzeige von Benutzer-Feldern im Kontakt
-image::17/10_anzeige_felder_benutzer.png[Einstellung der Anzeige von Benutzer-Feldern im Kontakt]
+image::17/11_anzeige_felder_benutzer.png[Einstellung der Anzeige von Benutzer-Feldern im Kontakt]
 
 Außerdem ist es möglich, die Benutzerfelder in Ihrem eigenen
 Kontakt-Override/Layout über folgende Zeile auszugeben:
