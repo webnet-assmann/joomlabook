@@ -317,7 +317,7 @@ _components/com++_++contact/tmpl/contact/default++_++form.php_
 anlegen.
 
 Sehen wir uns die Datei _default++_++form.php_ im Listing 17.3 an. In
-dem Formular befindet sich in den Zeilen 18–33 eine foreach-Schleife,
+dem Formular befindet sich in den Zeilen 26–41 eine foreach-Schleife,
 die innerhalb des form-Tags alle Felder abruft. Wenn wir nun die
 foreach-Schleife löschen, werden natürlich auch die Core-Felder nicht
 mehr ausgegeben.
