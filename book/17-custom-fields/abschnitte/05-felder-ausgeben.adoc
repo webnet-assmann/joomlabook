@@ -110,13 +110,11 @@ Plug-in-Code in Ihren Beitrag, der das Feld dann im Frontend an der
 entsprechenden Stelle ausgibt. Zum Beispiel lädt _++{++field 1}_ das
 Feld mit der _ID 1_.
 
-image:media/image7.jpg[media/image7,width=548,height=281]
+.Schaltfläche im _tinyMCE_-Editor
+image::17/08_schaltflaeche_tinymce.png[Schaltfläche im tinyMCE-Editor]
 
-Bild 17.7 – Schaltfläche im _tinyMCE_-Editor
-
-image:media/image8.jpg[media/image8,width=548,height=281]
-
-Bild 17.8 – Fenster zur Auswahl von Modulen
+.Fenster zur Auswahl von Modulen
+image::17/09_fenster_auswahl_module.png[Fenster zur Auswahl von Modulen]
 
 [width="99%",cols="14%,86%",options="header",]
 |===
@@ -285,9 +283,8 @@ KONTAKTANZEIGENOTIONEN die Einstellung _Eigene Felder anzeigen_. Die
 gleiche Einstellung ist im Kontakt selbst im Reiter „ANZEIGE“ und in den
 globalen Optionen der Kontakt-Komponente zu finden.
 
-image:media/image9.jpg[media/image9,width=548,height=250]
-
-Bild 17.9 – Einstellung der Anzeige von Benutzer-Feldern im Kontakt
+.Einstellung der Anzeige von Benutzer-Feldern im Kontakt
+image::17/10_anzeige_felder_benutzer.png[Einstellung der Anzeige von Benutzer-Feldern im Kontakt]
 
 Außerdem ist es möglich, die Benutzerfelder in Ihrem eigenen
 Kontakt-Override/Layout über folgende Zeile auszugeben:
