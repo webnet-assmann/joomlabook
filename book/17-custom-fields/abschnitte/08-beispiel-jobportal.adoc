@@ -64,7 +64,7 @@ Klicken Sie nun im Reiter Berechtigungen auf den seitlichen Reiter
 „_Public_“ und gewähren Sie die Bearbeitung von „Eigene Felder”.
 
 .Berechtigungen für das Feld einstellen
-image::17/14_berechtigungen_einstellen.png[Berechtigungen für das Feld einstellen]
+image::17/15_berechtigungen_einstellen.png[Berechtigungen für das Feld einstellen]
 
 Klicken Sie jetzt auf _speichern & schliessen_.
 
@@ -74,7 +74,7 @@ _Arbeitgeberinformationen_ und unserem ersten eigenen Feld
 „_Firmenname_“
 
 .Unser eigenes Feld in der Benutzerregistrierung
-image::17/15_eigenes_feld_benutzerregistrierung.png[Unser eigenes Feld in der Benutzerregistrierung]
+image::17/16_eigenes_feld_benutzerregistrierung.png[Unser eigenes Feld in der Benutzerregistrierung]
  
 Wir wechseln wieder in die Ansicht BENUTZER » VERWALTEN » FELDER und
 legen die nächsten Felder analog zum ersten an.
@@ -197,7 +197,7 @@ anschließend im Reiter Berechtigungen das Bearbeiten der Felder für die
 Gruppe _Registered._
 
 .Einstellungen der Werte im Radio-Feld
-image::17/16_einstellungen_radio_feld.png[Einstellungen der Werte im Radio-Feld]
+image::17/17_einstellungen_radio_feld.png[Einstellungen der Werte im Radio-Feld]
 
 ===== Einstellungsdatum
 
@@ -220,7 +220,7 @@ _C{plus}{plus}_, _Python_, _PHP_, _R_, _Perl_, _Ruby_. Vergessen Sie
 nicht die Zugriffsrechte für registrierte Benutzer einzustellen.
 
 .Abbildung der Optionen für das Checkbox-Feld
-image::17/17_optionen_checkbox_feld.png[Abbildung der Optionen für das Checkbox-Feld]
+image::17/18_optionen_checkbox_feld.png[Abbildung der Optionen für das Checkbox-Feld]
 
 ==== Bewerbungsformular
 
@@ -242,7 +242,7 @@ den Kontext _E-Mail_ auswählen, wie im Bild 17.17 angezeigt. Nennen Sie
 die Gruppe _Weitere Informationen_.
 
 .Auswahl des Kontext Mail
-image::17/18_auswahl_mail_feldgruppe.png[Auswahl des Kontext Mail]
+image::17/19_auswahl_mail_feldgruppe.png[Auswahl des Kontext Mail]
 
 ===== Link zum Lebenslauf
 
@@ -304,7 +304,7 @@ Registriert die Rechte _Erstellen_ und _Inhalt von eigenen Feldern bearbeiten_ a
 _erlaubt_ stellen.
 
 .Rechte für das Erstellen von Beiträgen einstellen
-image::17/19_rechte_beitraege_erstellen.png[Rechte für das Erstellen von Beiträgen einstellen]
+image::17/20_rechte_beitraege_erstellen.png[Rechte für das Erstellen von Beiträgen einstellen]
 
 ===== Optional: Alternatives Layout und Menütyp für das Einreichen von Stellenanzeigen
 
@@ -409,7 +409,7 @@ aus und speichern Sie den Beitrag.
 *HIER KOMMT FEHLERMELDUNG: FELD BENÖTIGT: KATEGORIE*
 
 .Eingabeformular im Frontend
-image::17/20_eingabeformular_frontend.png[Eingabeformular im Frontend]
+image::17/21_eingabeformular_frontend.png[Eingabeformular im Frontend]
 
 Klicken Sie nun auf den Link _Stellenangebote_. Die von Ihnen
 eingereichte neue Stellenanzeige sollte nun in der Übersicht aufgeführt
@@ -420,7 +420,7 @@ Im Bild 17.20 sehen Sie jetzt wie die eigenen Felder mithilfe der
 _Automatischen Anzeige_ im Beitrag ausgegeben werden.
 
 .Automatische Anzeige der Felder im Frontend
-image::17/21_automatische_anzeige_feld_frontend.png[Automatische Anzeige der Felder im Frontend]
+image::17/22_automatische_anzeige_feld_frontend.png[Automatische Anzeige der Felder im Frontend]
 
 Diese Anzeige mag in manchen Fällen zufriedenstellend sein, doch für das
 Stellenportal zeigt sich diese Ausgabe nicht wirklich einladend.
@@ -634,7 +634,7 @@ Wenn Sie nun die Stellenanzeigen aufrufen, werden diese im alternativen
 Layout dargestellt.
 
 .Individuelle Ausgabe der Anzeige
-image::17/22_individuelle_ausgabe.png[Individuelle Ausgabe der Anzeige]
+image::17/23_individuelle_ausgabe.png[Individuelle Ausgabe der Anzeige]
 
 In der Einleitung dieses Kapitels habe ich Sie darauf hingewiesen, dass
 „Eigene Felder” kein CCK sind. Sie sind ein fantastisches Mittel, um
