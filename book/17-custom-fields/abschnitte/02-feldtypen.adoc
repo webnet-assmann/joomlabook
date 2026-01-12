@@ -104,9 +104,8 @@ hinterlegen.
 Im Reiter „Optionen“ können detaillierte Feldeinstellungen vorgenommen
 werden. Diese Einstellungen sind ebenso für alle Felder gleich.
 
-image:media/image2.jpg[media/image2,width=548,height=327]
-
-Bild 17.2 – Generelle Feldeinstellungen im Reiter „Optionen“
+.Generelle Feldeinstellungen im Reiter „Optionen“
+image::17/02_optionen_grundeinstellungen.png[Generelle Grundeinstellungen im Reiter Optionen]
 
 ==== Eingabemaske-Optionen
 
@@ -247,9 +246,8 @@ Beispiel „NOW“ (Heute) eintragen und festlegen, ob die Zeit angezeigt werden
 soll oder nicht. Das Datumsformat wird seit Joomla! 3.7 über
 Sprachstrings gesteuert.
 
-image:media/image3.jpg[media/image3,width=393,height=328]
-
-Bild 17.3 – Das neue Joomla!-Kalenderfeld
+.Das Joomla!-Kalenderfeld
+image::17/03_joomla_kalenderfeld.png[Das Joomla! - Kalenderfeld]
 
 ===== Kontrollkästchen
 
@@ -267,9 +265,8 @@ als Hex-Wert in der Datenbank. Wenn Sie wollen, können Sie im
 _Standard-Parameter (Default)_ einen Wert hinterlegen (zum Beispiel
 #ff0000).
 
-image:media/image4.jpg[media/image4,width=548,height=207]
-
-Bild - 17.4 – Der Farbwähler
+.Der Farbwähler
+image::17/04_feld_farbwaehler.png[Der Farbwähler]
 
 ===== Editor (WYSIWYG)
 
@@ -320,9 +317,8 @@ Schalter oder als Buttons eingestellt werden. Wobei die Darstellung
 als Schalter (Switcher) nur bei zwei Optionen sinnvoll ist. Für mehr 
 als zwei Optionen sollte Buttons ausgewählt werden.
 
-image:media/image5.jpg[media/image5,width=548,height=103]
-
-Bild 17.5 – Das Design des Optionsfelds
+.Das Design des Optionsfelds
+image::17/05_design_optionsfeld.png[Das Design des Optionsfelds]
 
 ===== SQL (Dropdown und Mehrfach-Auswahl)
 
@@ -427,7 +423,8 @@ mehrere Datensätze innerhalb desselben Felds erfassen kann.
 
 Wie ein Subform angelegt und verwendet wird, ist im Kapitel 17.03 beschrieben.
 
-Bild - 17.6 Subformfeld im Layout Formular
+.Subformfeld im Layout Formular
+image::17/06_subformfeld.png[Subformfeld im layout Formular]
 
 ===== Zahl
 
