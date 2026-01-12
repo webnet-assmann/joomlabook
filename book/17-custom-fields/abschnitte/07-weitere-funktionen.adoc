@@ -28,5 +28,5 @@ Benötigen Sie die Funktion „Eigene Felder” nicht, kann diese über die
 Konfiguration der jeweiligen Komponente deaktiviert werden.
 
 .Deaktivieren „Eigene Felder” in den globalen Optionen der Komponente
-image::17/13_deaktivieren_eigene_felder.png[Deaktivieren „Eigene Felder” in den globalen Optionen der Komponente]
+image::17/14_deaktivieren_eigene_felder.png[Deaktivieren „Eigene Felder” in den globalen Optionen der Komponente]
 
