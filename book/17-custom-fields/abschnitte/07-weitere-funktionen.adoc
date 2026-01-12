@@ -27,7 +27,6 @@ Mit Joomla! 6 ist eine Versionierung der Custom Fields möglich.
 Benötigen Sie die Funktion „Eigene Felder” nicht, kann diese über die
 Konfiguration der jeweiligen Komponente deaktiviert werden.
 
-image:media/image12.jpg[media/image12,width=548,height=281]
+.Deaktivieren „Eigene Felder” in den globalen Optionen der Komponente
+image::17/13_deaktivieren_eigene_felder.png[Deaktivieren „Eigene Felder” in den globalen Optionen der Komponente]
 
-Bild 17.12 – Deaktivieren „Eigene Felder” in den globalen Optionen der
-Komponente
