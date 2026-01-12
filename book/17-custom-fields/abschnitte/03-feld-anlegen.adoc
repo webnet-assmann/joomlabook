@@ -107,8 +107,6 @@ Felder nachträglich beeinflussen. Klicken Sie dazu auf die Sortierpfeile
 im Tabellenkopf und sortieren Sie dann die Felder per _Drag & Drop_ an
 die gewünschte Position.
 
-image:media/image6.jpg[media/image6,width=548,height=281]
-
 .Reihenfolge der Feldanzeige ändern
 image::17/07_reihenfolge_felder_aendern.png[Reihenfolge der Feldanzeige ändern]
 
