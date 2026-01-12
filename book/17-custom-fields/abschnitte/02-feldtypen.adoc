@@ -11,9 +11,8 @@ Die Eigenen Felder haben einige gemeinsame Einstellungen. Folgende
 Basiseinstellungen können im ersten Reiter „Allgemein“ vorgenommen
 werden.
 
-image:media/image1.jpg[media/image1,width=548,height=378]
-
-Bild 17.1 Grundeinstellungen der Felder
+.Grundeinstellungen der Felder
+image::17/01_felder_grundeinstellungen.png[Grundeinstellungen der Felder]
 
 ===== Titel
 
